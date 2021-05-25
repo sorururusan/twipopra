@@ -1,0 +1,151 @@
+body{
+   margin:30px;
+   background-color:rgba(0, 0, 0, 0.486);
+   text-align: center;
+}
+
+.h1{
+  font-size:10px;
+}
+
+.h2{
+  font-size:80%;
+}
+
+.h3{
+  font-size:60%;
+}
+
+p{
+   font-size:20px;
+}
+
+span{
+  display: block;
+}
+
+span::after {
+	content: "\A" ;
+	white-space: pre ;
+}
+
+.gnav {
+  flex-direction: column;
+}
+
+.wrapper{
+  min-height: 100vh;
+  position: relative;/*←相対位置*/
+  padding-bottom: 120px;/*←footerの高さ*/
+  box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+}
+
+footer{
+  width: 100%;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 30px 0;
+
+position: relative;/*相対位置*/
+  bottom: 0; /*下に固定*/
+}
+
+navbar{
+  height:100%;
+}
+
+img.brand{
+  max-width: 160px;
+  max-height: 50px;
+}
+
+.marker{
+    background-color:rgb(0, 0, 0);
+    font-size:larger;
+    color: white;
+}
+.center{
+  text-align: center;
+}
+
+.right{
+  text-align: right;
+}
+
+.promo::before {
+	content: "\A" ;
+	white-space: pre ;
+}
+
+.promo{
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.promo::after {
+	content: "\A" ;
+	white-space: pre ;
+}
+
+.tweet{
+  text-align: left;
+  background-color:rgb(132, 228, 128);
+  position: relative;
+  width: 100%;
+  padding: 10px;
+}
+
+.small{
+  font-size:20px;
+  color: rgb(68, 68, 68);
+}
+
+.back-white{
+  background-color:white;
+}
+
+.rank{
+  text-align: left;
+  background-color:gray;
+  display        : inline-block;
+  color          : #ffffff;            /* 文字の色 */
+  letter-spacing : 4px;                /* 文字間 */
+  text-shadow    : 
+       2px  2px 1px #272727,
+      -2px  2px 1px #272727,
+       2px -2px 1px #272727,
+      -2px -2px 1px #272727,
+       2px  0px 1px #272727,
+       0px  2px 1px #272727,
+      -2px  0px 1px #272727,
+       0px -2px 1px #272727;        /* 文字の影 */
+  margin: 5px;
+  padding: 5px;
+  border: double 1px black;
+  font-size:30px;
+}
+
+#page_top{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background: #3f98ef;
+  opacity: 0.6;
+}
+
+.page_top{
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+.icon_img{
+  padding: 10px;
+}
+
+.standard{
+  font-size: 20px;
+}

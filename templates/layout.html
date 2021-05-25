@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="description" content="人気のツイートランキング">
+        <meta name="keywords" content="Twitter,ランキング">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@dia1836">
+        <meta name="twitter:title" content="TwiPopRank - ついぽぷら">
+        <meta name="twitter:description" content="人気のツイートランキング">
+        <meta name="twitter:image" content="http://twipopra.xyz/static/thumb.png">
+        <meta property="og:url" content="http://twipopra.xyz/" />
+        <meta property="og:title" content="TwiPopRank - ついぽぷら" />
+        <meta property="og:description" content="人気のツイートランキング" />
+        <meta property="og:image" content="http://twipopra.xyz/static/thumb.png" />
+
+        <!--  CSS -->
+           <!-- <link rel="stylesheet" href="../static/style.css"> -->
+           <link rel="stylesheet" href="{{ staticfile('style.css') }}">
+
+           <!-- トップに戻るボタン関連 -->
+           <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+
+           <!-- Required meta tags -->
+           <meta charset="utf-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+           <!-- Bootstrap CSS -->
+           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <!-- googleアドセンス -->
+        <script data-ad-client="ca-pub-5000828470646498" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        
+        <title>{{ title }}</title>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light gnav">
+                <a href="./" class="navbar-brand d-flex align-items-left">
+                    <img src="./static/brand.png" alt="Twitter Pop Ranking" class="brand">
+                </a>
+                <h1 class="small">公式認証アカウントの人気ツイートランキング</h1>
+            </nav>
+        </header>
+        {% block content %}
+        <!-- ここにメインコンテンツを書く -->
+        {% endblock %}
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+
+    <footer class="center">
+        {% autoescape false %}
+
+            {{tweetbtn }}
+
+        {% endautoescape %}
+
+        <div class="container-fluid">
+            <div class="promo">
+                <!--広告-->
+            </div>
+        </div>
+        <i>(C) 2021 ついぽぷら</i>
+        <div id="page_top"><a href="#"><span class="page_top">↑</span></a></div>
+    </footer>
+</html>

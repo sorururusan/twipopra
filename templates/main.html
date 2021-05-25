@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-1">
+            <div class="center">
+
+            </div>
+        </div>
+
+        <div class="col-sm-10">
+            <div class="center">
+                {% autoescape false %}
+
+                {{ update }}
+
+                <ul class="pagination justify-content-center">
+                    {{ pagination.links }}
+                </ul>
+                
+            </div>
+
+                {{ tweets }}
+
+            
+            <div class="center">
+
+                <ul class="pagination justify-content-center">
+                    {{ pagination.links }}
+                </ul>
+
+                {% endautoescape %}
+            </div>
+        </div>
+
+        <div class="col-sm-1">
+
+        </div>
+    </div>
+
+
+ </div>
+
+{% endblock %}
